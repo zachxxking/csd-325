@@ -45,7 +45,7 @@ class Todo(tk.Tk):
         
         # Added directions on how to delete items
         todo1 = tk.Label(self.tasks_frame, text="List Items --- **Right Click Item to Delete**", bg="midnightblue", fg="white", pady=10)
-        todo1.bind("<Button-2>", self.remove_task) # Changed the delte task to the right mouse button
+        todo1.bind("<Button-3>", self.remove_task) # Changed the delete task to the right mouse button
         
         self.tasks.append(todo1)
         
